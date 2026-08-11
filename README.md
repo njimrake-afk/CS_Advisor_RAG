@@ -56,6 +56,9 @@ I have successfully built a **functional Narrow AI working prototype** that perf
 Instead of opening dozens of browser tabs across multiple UCI websites, I can now query a single, fact-grounded assistant that consolidates complex academic policies into instant, direct answers.
 
 ---
+## Working Of the AI
+<video src="./media/Screen%20Recording%202026-08-11%20135837.mp4" controls="controls" style="max-width: 100%;"></video>
+
 
 ## 👤 Author
 
