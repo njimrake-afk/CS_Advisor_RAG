@@ -22,10 +22,10 @@ I initially started by feeding raw UCI website URLs directly into the Alltius pl
 ### Phase 2: Data Cleaning & Modular Sources 🧹
 Realizing the critical importance of **Data Quality and Preparation**, I manually extracted the necessary information directly from UCI catalogs and policy portals. I cleaned, structured, and organized the raw text into **4 distinct, curated pdf files**:
 
-1. **`01_Compsci-Prereqs`** – Compsci courses offered with the description and pre-requisites.
-2. **`02_UCI_CS`** – Add/Drop deadlines, P/NP grading limits, unit caps, and retake rules.
-3. **`CS-26-27`** – Core degree requirements
-4. **`LD & UD courses`** – Compulsory Lower Division and Upper Division Courses.
+1. Compsci-Prereqs – Compsci courses offered with the description and pre-requisites.
+2. UCI_CS– Add/Drop deadlines, P/NP grading limits, unit caps, and retake rules.
+3. CS-26-27 – Core degree requirements
+4. LD & UD courses – Compulsory Lower Division and Upper Division Courses.
 
 * **The Result:** The model’s response quality and factual accuracy improved immediately.
 
@@ -35,6 +35,10 @@ Realizing the critical importance of **Data Quality and Preparation**, I manuall
 1. **Initial Manual Ingestion:** I started by manually collecting and cleaning raw policy text into Markdown to test RAG response quality on Alltius KNO+.
 2. **Recognizing the Automation Bottleneck:** I quickly realized that manual data extraction was inefficient, as it wouldn't scale as university catalogs and prerequisites update.
 3. **Automated Pipeline via BeautifulSoup:** To automate any further data ingestion, I built a custom Python web scraper using `requests` and `BeautifulSoup4` (`scripts/scraper.py`). The script automatically fetches live UCI web pages, strips away HTML boilerplate (navbars, footers, scripts), and formats clean `.md` files which then only had to be converted to pdf and then uploaded, making the process quite efficient.
+4. Through this method, i scraped 3 files, namely
+         CS_Advisor.pdf - Information about the ics advising available to students,
+         Major_Requirements.pdf - The requirements every CS student had to complete,
+         Enrollment_Policies.pdf - Information about the enrollment into UCI
    
 ## 🔍 Key Findings & Current Work in Progress
 
