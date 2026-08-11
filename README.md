@@ -36,9 +36,10 @@ Realizing the critical importance of **Data Quality and Preparation**, I manuall
 2. **Recognizing the Automation Bottleneck:** I quickly realized that manual data extraction was inefficient, as it wouldn't scale as university catalogs and prerequisites update.
 3. **Automated Pipeline via BeautifulSoup:** To automate any further data ingestion, I built a custom Python web scraper using `requests` and `BeautifulSoup4` (`scripts/scraper.py`). The script automatically fetches live UCI web pages, strips away HTML boilerplate (navbars, footers, scripts), and formats clean `.md` files which then only had to be converted to pdf and then uploaded, making the process quite efficient.
 4. Through this method, i scraped 3 files, namely
-         CS_Advisor.pdf - Information about the ics advising available to students,
-         Major_Requirements.pdf - The requirements every CS student had to complete,
-         Enrollment_Policies.pdf - Information about the enrollment into UCI
+   
+1) CS_Advisor.pdf - Information about the ics advising available to students,
+2) Major_Requirements.pdf - The requirements every CS student had to complete,
+3) Enrollment_Policies.pdf - Information about the enrollment into UCI
    
 ## 🔍 Key Findings & Current Work in Progress
 
